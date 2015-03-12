@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>測試藍新刷卡</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="js/jquery/jquery-1.8.2.js"></script>
+    </head>
+    <body>
+        <form action="card-test2.php" method="post">
+            <div>
+                訂單:<input type="text" name="orderid" value=""/><br/>
+                訂單金額:<input type="text" name="price" value=""/>
+            </div>
+            <input type="checkbox" name="use_ctravel" id="use_ctravel" value="1"/><label for="use_ctravel">使用國旅卡</label>
+            <div id="ctravel_opts" style="display:none">
+                行程起日:<input type="text" name="ctravel_startdate" value=""/><span>yyyymmdd</span><br/>
+                行程迄日:<input type="text" name="ctravel_enddate" value=""/><span>yyyymmdd</span><br/>
+                郵遞區號:<input type="text" name="ctravel_zipcode" value=""/><span>3位以內數字</span>
+            </div>
+            <div><input type="checkbox" name="use_redemption" id="use_redemption" value="1"/><label for="use_ctravel">使用紅利折抵(限新光卡)</label></div>
+            <div><input type="checkbox" name="noDeposit" id="noDeposit" value="1"/><label for="noDeposit">不自動請款</label></div>
+            <div><input type="submit" value="送出"/></div>
+        </form>
+        <script type="text/javascript">
+            jQuery(function($){
+                $("#use_ctravel").click(function(evt){
+                    if(this.checked){
+                        $("#ctravel_opts").slideDown();
+                    }else{
+                        $("#ctravel_opts").slideUp();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

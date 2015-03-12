@@ -1,0 +1,17 @@
+Array
+(
+    [final_result] => 0
+    [P_MerchantNumber] => 760093
+    [P_OrderNumber] => AM201403030012
+    [P_Amount] => 350.00
+    [P_CheckSum] => 27e4ebf0a99edcc14610af51ddd8d45e
+    [final_return_PRC] => 0
+    [final_return_SRC] => 0
+    [final_return_ApproveCode] => FC3948
+    [final_return_BankRC] => 0/00
+    [final_return_BatchNumber] => 2014030301
+    [final_redemption_point] => 0
+    [final_redemption_amount] => 0
+    [final_redemption_remain] => 0
+    [final_redemption_payamount] => 0
+)

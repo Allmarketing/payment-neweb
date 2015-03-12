@@ -1,0 +1,5 @@
+ALTER TABLE  `cht_order` ADD  `PRC` INT NOT NULL ,
+ADD  `SRC` INT NOT NULL ,
+ADD  `ApprovalCode` VARCHAR( 255 ) NOT NULL ,
+ADD  `BankResponseCode` VARCHAR( 255 ) NOT NULL ,
+ADD  `BatchNumber` VARCHAR( 255 ) NOT NULL;
